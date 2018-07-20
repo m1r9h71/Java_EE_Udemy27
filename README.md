@@ -5,9 +5,9 @@ I created a Session Bean Called PassengerService which linked back to the persis
       @PersistenceContext(unitName="airline")
       private EntityManager em;
     
-      public void addPassenger(Passenger p) {
+      		public void addPassenger(Passenger p) {
     	
-    	  em.persist(p);
+    	  	em.persist(p);
         
 Then i created a Servlet called AddPassenger which linked to Passenger object with this code:
     @EJB
